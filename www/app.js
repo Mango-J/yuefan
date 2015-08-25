@@ -12,6 +12,7 @@ angular
         'yuefan.signup',
         'yuefan.fanjus',
         'yuefan.newfanju',
+        'yuefan.invitefriends',
     ])
     .run(run)
     .config(config);
@@ -76,6 +77,11 @@ angular
                 url: '/newfanju',
                 controller: 'NewFanjuCtrl',
                 templateUrl: 'view_new_fanju/new_fanju.html'
+            })
+            .state('invitefriends', {
+                url:'/invitefriends',
+                controller: 'InviteFriendsCtrl',
+                templateUrl: 'view_invite_friends/invite_friends.html'
             });
             //$urlRouterProvider.otherwise("/fanjus");
     }

@@ -9,6 +9,7 @@
         .service('FanjusSrv', FanjusSrv);
 
     function FanjusCtrl ($scope, $rootScope, $state, FanjusSrv) {
+
         $scope.$on('$ionicView.enter', function() {
         // code to run each time view is entered
         // need a better way to do this
@@ -20,9 +21,9 @@
             function(results){
             angular.forEach(results, function(fanju){
                 if(fanju.get('status') == 'planned'){
-                $scope.fanjus.planned.push(fanju);
+                  $scope.fanjus.planned.push(fanju);
                 } else {
-                $scope.fanjus.settled.push(fanju);
+                  $scope.fanjus.settled.push(fanju);
                 }
             });
             }, function(error){
@@ -31,15 +32,15 @@
             }
         );
         });
-
+        
         $scope.logout = function(){
             Parse.User.logOut();
             $rootScope.sessionUser = Parse.User.current();
             $state.go('login');
         };
-
+        
         $scope.add_new_fanju = function(){
-            $state.go('add_fanju')
+            $state.go('newfanju');
         };
     }
 
