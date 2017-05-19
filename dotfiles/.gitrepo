@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Mango-J/dotfiles.git
+	branch = master
+	commit = 88b945f33bb670a5f50c715f0fecb364714f41ca
+	parent = ccfe2f3f2a86fd76a65490c787ed2f0968cc0c31
+	cmdver = 0.3.1
