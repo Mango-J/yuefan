@@ -1,6 +1,6 @@
 {
-  "name": "yuefan",
-  "version": "1.0.0",
+  "name": "Yuefan",
+  "version": "1.0.1",
   "description": "yuefan: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
